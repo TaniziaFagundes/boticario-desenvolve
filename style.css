@@ -1,0 +1,80 @@
+body{
+    font-family: "Roboto";
+    margin: 10px;
+    margin-bottom:50px;
+}
+
+.botao [value="+"]{
+    color:#fff;
+
+}
+
+body h1{
+    color: #32505E;
+}
+
+li{
+    list-style: none;
+    display: inline-block;
+    color: #648594; 
+    max-width :500px;
+}
+
+body #estudantes{
+    display:grid; /*adicionando grid*/
+    padding-inline-start: 0;
+}
+
+
+body  .new-task, input[type="button"]{
+    display:inline-block;
+    padding: 15px;
+    border: 1px solid #648594;
+}
+
+
+
+body .new-task{
+    padding-right: 80px;
+    border-bottom-left-radius:8px;
+    border-top-left-radius: 8px;
+}
+
+body input[type="button"]{
+    background-color: #648594;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+input[type="button"]:hover{
+    background-color:#1c4d64;
+}
+
+.aluno{
+    border: 1px solid #648594;
+    border-radius:8px;
+    margin:10px 0;
+    padding:10px;
+    
+}
+
+body div{
+    background-color:rgba(182, 179, 179, 0.514);
+    padding: 5px;
+    border-radius: 5px;
+    color: 333333;
+    font-weight: bold;
+    font-size:18px;
+    margin-bottom: 20px;
+}
+
+.aluno li{
+    font-size:16px;
+}
+
+.aluno ol{
+    display:inline-block;
+    padding-inline-start: 0;
+}
+
+

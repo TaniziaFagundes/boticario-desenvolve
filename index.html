@@ -1,0 +1,84 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <body>
+        
+        <ul id="estudantes">
+            
+            <li id="template" >
+                <h1>Nossa app</h1>
+                <li class="botao"><input class="new-task " type="text" placeholder="Adicionar Estudante" ><input type="button" value="+" onclick="addTarefa(this)"></li>
+            </li>
+
+            <hr>
+ 
+            <li class="aluno">
+                <div>Bruno</div>
+                <ol>
+                     <li><input type="checkbox"> Colocar fundo pink em pequenas telas</li>
+                </ol>
+            </li>
+
+            <li class=botao>
+                <input class="new-task" type="text" placeholder="Adicionar tarefa" ><input type="button" value="+" onclick="addTarefa(this)">
+            </li>
+
+            <hr>
+
+            <li class="aluno">
+                <div>Zuleide</div>
+                <ol>
+                    <li><input type="checkbox"> Exportar codigo JS e importar o arquivo no html</li>
+                    <li><input type="checkbox"> Cor de fundo das taregas cinza</li>
+                </ol>
+            </li>
+
+            <li class="botao">
+                <input class="new-task" type="text" placeholder="Adicionar tarefa" ><input type="button" value="+" onclick="addTarefa(this)">
+            </li>
+
+            <hr>
+
+            <li class="aluno">
+                <div>Tanizia</div>
+                <ol>
+                    <li><input type="checkbox"> Alterar a lista para cards retangulares e adaptaveis a varios tamanhos de telas</li>
+                </ol>
+            </li>
+            
+            <li class="botao">
+                <input class="new-task" type="text" placeholder="Adicionar tarefa" ><input type="button" value="+" onclick="addTarefa(this)">
+            </li>
+            
+        </ul>
+      
+     </body>
+ 
+     <footer>
+ 
+     </footer>
+ <script>
+ 
+     const btn = document.getElementById('add-btn')
+     btn.addEventListener('click',  () => {
+         const estudante = document.getElementById('template').cloneNode(true)
+         estudante.style.display = 'block'
+         estudante.querySelector('div').textContent = document.getElementById('nome-estudante').value
+        document.getElementById('estudantes').append(estudante)
+     })
+ 
+ 
+     function addTarefa(e){
+         const novaTarefa = document.createElement('li')
+         novaTarefa.textContent = e.parentNode.querySelector('.new-task' ).value
+         e.parentNode.querySelector('ol' ).append(novaTarefa)
+     }
+ 
+ </script>
+ </html>
